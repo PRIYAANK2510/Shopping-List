@@ -1,0 +1,43 @@
+.addForm {
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+  background-color: hsl(80, 30%, 40%);
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  & label {
+    display: none;
+  }
+  & input {
+    background-color: #91a667;
+    color: hsl(80, 70%, 10%);
+    flex: auto;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: none;
+    &::placeholder {
+      color: hsl(80, 10%, 40%);
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid hsl(80, 20%, 15%);
+    }
+  }
+  & button {
+    background-color: hsl(80, 20%, 15%);
+    color: hsl(80, 50%, 60%);
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-content: center;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

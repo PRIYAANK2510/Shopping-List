@@ -1,0 +1,29 @@
+@use "./scss/resets" as *;
+@use "./scss/header" as *;
+@use "./scss/addItem" as *;
+@use "./scss/searchItem" as *;
+@use "./scss/content" as *;
+@use "./scss/footer" as *;
+
+body {
+  background-color: hsl(80, 30%, 40%);
+}
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: hsl(80, 20%, 15%);
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: hsl(80, 30%, 40%);
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(80, 26%, 53%);
+}
