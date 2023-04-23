@@ -7,7 +7,7 @@ import SearchItem from "../components/SearchItem";
 import apiRequest from "../services/apiRequest";
 
 const Home = () => {
-  const API_URL = "http://localhost:3000/items";
+  const API_URL = "https://items-gol5.onrender.com/items";
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
